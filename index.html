@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="form">
+        <form class="form_body" name="test-form" method="POST" data-netlify="true">
+
+            <h1 class="form_title">Contact Form</h1>
+
+
+            <div class="form_item">
+                <label for="formName" class="form_label">Name:</label>
+                <input id="formName" type="text" name="name" class="form_input req">
+            </div>
+
+
+            <div class="form_item">
+                <label for="formEmail" class="form_label">Email:</label>
+                <input id="formEmail" type="text" name="email" class="form_input req _email">
+            </div>
+
+
+            <div class="form_item">
+                <div class="form_label">Gender</div>
+                <div class="options">
+                    <div class="options_item">
+                        <input id="formMale" checked type="radio" value="male" name="gender" class="options_input">
+                        <label for="formMale" class="options_label"><span>Male</span></label>
+                    </div>
+                    <div class="options_item">
+                        <input id="formFemale" type="radio" value="female" name="gender" class="options_input">
+                        <label for="formFemale" class="options_label"><span>Female</span></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form_item">
+                <label for="formMessage" class="form_label">Your message:</label>
+                <textarea name="message" id="formMessage" class="form_input"></textarea>
+            </div>
+
+
+            <div class="form_item">
+                <div class="form_label">Age:</div>
+                <select name="age" class="select">
+                    <option value="from 18 to 25" selected="selected">Young</option>
+                    <option value="from 25 to 45">Young Adult</option>
+                    <option value="from 45">Adult</option>
+                </select>
+            </div>
+
+
+            <div class="form_item">
+                <div class="form_label">Attach file</div>
+                <div class="file">
+                    <div class="file_item">
+                        <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file_input">
+                        <div class="file_button">Select</div>
+                    </div>
+                    <div id="formPreview" class="file_preview"></div>
+                </div>
+            </div>
+
+
+            <div class="form_item">
+                <div class="checkbox">
+                    <input id="formAgreement" type="checkbox" name="agreement" class="checkbox_input req">
+                    <label for="formAgreement" class="checkbox_label"><span>I agree to the following <a href="#">Terms and Conditions</a></span></label>
+                </div>
+            </div>
+
+
+            <button type="submit" class="form_button">Send</button>
+
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
